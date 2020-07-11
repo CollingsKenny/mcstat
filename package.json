@@ -1,6 +1,6 @@
 {
   "name": "mcstatbot",
-  "version": "1.0.0",
+  "version": "0.1.2",
   "description": "Shows some Minecraft server info in discord",
   "main": "bot.js",
   "scripts": {
