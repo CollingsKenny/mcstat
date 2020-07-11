@@ -1,8 +1,9 @@
 require('dotenv').config();
 
 const Discord = require('discord.js');
-const client = new Discord.Client();
 const axios = require('axios');
+
+const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log('Connected as ' + client.user.tag);
