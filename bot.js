@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const axios = require('axios');
@@ -11,7 +13,6 @@ client.on('message', (message) => {
     axios
       .get('https://mcapi.us/server/status?ip=24.5.218.137')
       .then(function ({ data }) {
-        //console.log(data);
         let resMsg = '';
         resMsg += data.online
           ? ' :monkey:  Server is running on 24.5.218.137'
@@ -29,4 +30,4 @@ client.on('message', (message) => {
   }
 });
 
-client.login('NzMwNjIzNjQ1MDU5MzgzMzI3.XwjTzw.zjZU4UqWfhV13tBFqeHDMLpJ9qs');
+client.login(process.env.DISCORD_TOKEN);
