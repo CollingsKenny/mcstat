@@ -1,0 +1,15 @@
+{
+  "name": "mcstatbot",
+  "version": "1.0.0",
+  "description": "Shows some Minecraft server info in discord",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "discord.js": "^12.2.0"
+  }
+}
