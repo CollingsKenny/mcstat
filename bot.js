@@ -25,8 +25,13 @@ client.on('message', (message) => {
 
   switch (message.content) {
     case '!status':
-      getStatus('24.5.218.137', '25565', message, ':monkey:', ':monkey_face:');
-      getStatus('24.5.218.137', '25566', message, ':soap:', ':poo:');
+      getStatus(
+        'apetogethermc.v3dsims.com',
+        '25565',
+        message,
+        ':monkey:',
+        ':monkey_face:'
+      );
       break;
     case '!version':
       message.channel.send(version);
